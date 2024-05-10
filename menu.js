@@ -1,4 +1,5 @@
 
+
 function showSidebar(){
     const sidebar=document.querySelector(".sidebar");
     sidebar.style.display="flex";
@@ -75,7 +76,7 @@ let products ={
             image:"./images/food5.webp",
         }
         ,{
-            productName:"Japanese Vegetable",
+            productName:"Japanese Vegetable Skewers ",
             category:"Others",
             price:"40",
             cart:"Add to Cart",
@@ -182,26 +183,29 @@ function filterProduct(value){
     })
 }
 
-
-document.getElementById('search').addEventListener("click",()=>{
+document.getElementById('search').addEventListener("click", () => {
     // initialization
-    let searchInput=document.getElementById("search-input").value;
-    let elements=document.querySelectorAll(".product-name");
-    let cards=document.querySelectorAll(".card");
- console.log({elements,cards,searchInput})
+    let searchInput = document.getElementById("search-input").value.toUpperCase(); 
+    let elements = document.querySelectorAll(".product-name");
+    let cards = document.querySelectorAll(".card");
 
-    // loop through all elements
-    elements.forEach((element,index)=>{
-        //check if text includes the search value
-        if(element.innerText.includes(searchInput.toUpperCase())){
-            // display matches
-            cards[index].classList.remove("hide");
-        }
-        else{
-            cards[index].classList.add('hide');
-        }
-    })
+    // Check if the search input is "ALL"
+    if (searchInput === "ALL") {
+        // Show all products if the search term is "all"
+        cards.forEach((card) => {
+            card.classList.remove("hide");
+        });
+    } else {
+        elements.forEach((element, index) => {
+            if (element.innerText.includes(searchInput)) {
+                cards[index].classList.remove("hide");
+            } else {
+                cards[index].classList.add("hide");
+            }
+        });
+    }
 });
+
 
 //Initially display All Products
 window.onload=()=>{
