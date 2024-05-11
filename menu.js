@@ -36,7 +36,7 @@ let products ={
             image:"./images/blg6.webp",
         }
         ,{
-            productName:"Rubby Chicken Curry",
+            productName:"Chicken Curry",
             category:"Chicken",
             price:"40",
             cart:"Add to Cart",
@@ -76,7 +76,7 @@ let products ={
             image:"./images/food5.webp",
         }
         ,{
-            productName:"Japanese Vegetable Skewers ",
+            productName:"Japanese Vegetable",
             category:"Others",
             price:"40",
             cart:"Add to Cart",
@@ -135,7 +135,6 @@ for (let i of products.data){
 // price
 let price=document.createElement('h6');
 price.innerText="$" + i.price;
-price.style.color="#efefef"
 container.appendChild( price);
 
 let cart=document.createElement("button");

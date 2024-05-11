@@ -97,18 +97,10 @@ li a:hover {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.sidebar #menus {
-  border-bottom: 3px solid rgba(5, 236, 67, 0.4);
-  padding-bottom: 20px;
-  width: 100%;
-}
 
-.sidebar h1 {
-  margin-top: -8px;
-  font-size: 2rem;
-}
+
 .sidebar li a{
-  border-radius:30px ;
+  /* border-radius:30px ; */
   
 }
 .close {
@@ -118,10 +110,9 @@ li a:hover {
   max-width: 33px;
   border: none;
   outline:none ;
-  border: 5px solid slateblue;
+  /* border: 5px solid slateblue; */
   z-index: -2;
-  /* color: red; */
-  /* background-color: rgb(226, 151, 12); */
+ 
   border-radius: 7px;
   /* float: right; */
 }
@@ -135,7 +126,7 @@ li a:hover {
   top: 0px;
   left: 27.5em;
 }
-/*  */
+/* won */
 /* Sidebar Section from Media Queries */
 /* Sidebar scetion */
 .sidebar {
@@ -270,11 +261,23 @@ li a:hover {
   padding: 1rem 0.3em;
 }
 #search-container input:focus {
-  background-color: rgb(224, 187, 117);
+  /* background-color: rgb(175, 142, 81); */
   font-size: .9em;
+  color:#ffffff;
+  font-weight: 600;
   /* padding: .8em; */
   border-radius: 5px;
+  text-align: center;
 }
+#search-container input::placeholder {
+  /* background-color: rgb(224, 187, 117); */
+  font-size: .9em;
+  color:#e9e2e2;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+
 #search-container button {
   padding: 1.3em 2.2em;
   margin-left: 1em;
@@ -282,12 +285,14 @@ li a:hover {
   color: #fff;
   border-radius: 5px;
   border: none;
+  text-align: center;
   margin-top: 0.5rem;
 }
 div#buttons{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
 }
 .button-value {
   border-radius: 3em;
@@ -300,27 +305,25 @@ div#buttons{
   background-color: orangered;
   color: #fff;
 }
+
+/*===========================Prodct Section============= */
+
 #products {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-  /* grid-template-columns: auto auto auto; */
-
-  grid-column-gap: 1rem;
+  gap: 1.5rem;
   padding: 2em 0;
 }
 .card {
   background-color: #ffffff3b;
   backdrop-filter: blur(10px);
   max-width: 18em;
-  height: 22em;
-  margin-top: 1em;
+  height: 20em;
   padding: 1em;
-  border-radius: 10px;
-  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
-  border: 2px solid rgba(191, 191, 206, 0.822);
+  border-radius: 20px;
+  border: 1px solid rgba(191, 191, 206, 0.822);
   box-shadow: inset 6px 6px 10px rgba(245, 224, 255, 0.74),
     inset -6px -6px 10px rgba(245, 224, 255, 0.74);
 }
@@ -328,17 +331,26 @@ div#buttons{
   text-align: center;
 }
 img {
+  width: 100%;
   max-width: 100%;
   object-fit: contain;
-  height: 15em;
+  
+  border-radius: 10px;
   /* border: 2px solid; */
   /* border: 2px solid; */
 }
 .container1 h5 {
   font-weight: 500;
-  font-size: 1em;
+  font-size: 23px;
+ text-align: center;
+  color: #fff;
 }
+.container h6{
+  color: #ffff;
+  text-align: center;
+  font-size: 1.5em;
 
+}
 .hide {
   display: none;
 }
@@ -500,7 +512,7 @@ right: -14.5em;
       
       .close {
         position: absolute;
-        top: 30px;
+        top: 39px;
         left: 12em;
         /* border: 3px solid red; */
         /* color: red; */
@@ -591,7 +603,7 @@ right: -12em;
       
       .close {
         position: absolute;
-        top: 30px;
+        top: 39px;
         left: 12em;
         /* border: 3px solid red; */
         /* color: red; */
@@ -679,7 +691,7 @@ right: -11.3em;
       
       .close {
         position: absolute;
-        top: 30px;
+        top: 39px;
         left: 12em;
         /* border: 3px solid red; */
         /* color: red; */
@@ -766,7 +778,7 @@ right: -11.3em;
       
       .close {
         position: absolute;
-        top: 30px;
+        top: 38px;
         left: -6em;
         /* border: 3px solid red; */
         /* color: red; */
@@ -857,18 +869,17 @@ right: -11.3em;
       
       .close {
         position: absolute;
-        top: 30px;
+        top: 38px;
         left: -6em;
         /* border: 3px solid red; */
-        /* color: red; */
         background-color: rgb(226, 151, 12);
         border-radius: 7px;
-        /* float: right; */
       }
-      .sideb {
-        margin-top: 20px;
-        border: 2px solid green;
-      }
+     /* Product */
+     .container1 h5{
+      /* font-weight: 500; */
+      letter-spacing: 0.1em;
+     }
 }
 
 
@@ -945,7 +956,7 @@ right: -11.3em;
         
         .close {
           position: absolute;
-          top: 30px;
+          top: 39px;
           left: -6em;
           /* border: 3px solid red; */
           /* color: red; */
@@ -974,10 +985,12 @@ right: -11.3em;
   padding: 1rem 0.3em;
 }
 #search-container input:focus {
-  background-color: rgb(224, 187, 117);
+  /* background-color: rgb(224, 187, 117); */
   font-size: .9em;
   /* padding: .8em; */
   border-radius: 5px;
+  border-bottom: 4px solid rgba(204, 204, 204, 0.741);
+
 }
 #search-container button {
   padding: 1.3em 2.2em;
@@ -1001,6 +1014,10 @@ div#buttons{
   color: purple;
   cursor: pointer;
   border: none;
+}
+/* product */
+.container1 h5{
+  letter-spacing: 0;
 }
 }
 
@@ -1067,12 +1084,12 @@ div#buttons{
 
 
 .sidebar h1 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .close {
   position: absolute;
-  top: 22px;
+  top: 33px;
   left: -13em;
   /* border: 3px solid red; */
   /* color: red; */
@@ -1266,12 +1283,12 @@ ul {
       
       
       .sidebar h1 {
-        font-size: 14px;
+        font-size: 15px;
       }
       
       .close {
         position: absolute;
-        top: 24px;
+        top: 29px;
         left: -20em;
         /* border: 3px solid red; */
         /* color: red; */
