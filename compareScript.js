@@ -90,6 +90,7 @@ let products = {
         button.classList.remove("active");
       }
     });
+    
     //select all cards
     let elements = document.querySelectorAll(".card");
     //loop through all cards

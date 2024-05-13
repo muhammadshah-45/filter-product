@@ -138,6 +138,7 @@ let products ={
     // price.style.color="#efefef"
     container.appendChild(price);
     card.appendChild(container);
+    // My previous code that issued
     // ============finish this block ====== //
     // ========(SATRT) I did my work given below ======//
     // let cart=document.createElement("button");
@@ -148,11 +149,13 @@ let products ={
     
     // console.log(card)
     // console.log(card)
-    // =============end i did mY work above=========///
+    // ============= Here end i did mY work above=========///
     
      document.getElementById("products").appendChild(card);
     
     }
+
+
     //Parameter passed from  buttton (Parameter same as a category)
     function filterProduct(value){
         //button class code
@@ -165,6 +168,7 @@ let products ={
                 button.classList.remove("active")
             }
         });
+        //  I had issued above code
         //Select all cards
         let elements=document.querySelectorAll(".card");
         // loop through all cards
@@ -181,34 +185,31 @@ let products ={
                 }
                 else{
                     //hide other elements
-                    element.classList.add('hide')
+                    element.classList.add('hide');
                 }
             }
         });
     }
     
-    
     // Search button click
     document.getElementById('search').addEventListener("click", () => {
-        //  console.log("line190") ==mine
+        //  console.log("line190") ==mine i had issued that added extra code
         // initializations
         let searchInput = document.getElementById("search-input").value; 
         let elements = document.querySelectorAll(".product-name");
         let cards = document.querySelectorAll(".card");
        // Loop through all elements
-    
-      elements.forEach((elements,index)=>{
+    //    I had issued below code that was own code
+      elements.forEach((element,index)=>{
         //check if text includes the search value
         if(element.innerText.includes(searchInput.toUpperCase())){
-            //display matching card
+            //display matching card 
             cards[index].classList.remove("hide");
         }else{
             //hide others
-            cards[index].classList.add('hide');
+            cards[index].classList.add("hide");
         }
-    
-      })
-    
+      });
     });
         
     
@@ -237,11 +238,9 @@ let products ={
     //         });
     //     }
     // });
-    
+    // I had issued above at preivous time.
     
     //Initially display All Products
-    window.onload=()=>{
-        // console.log("line")
+    window.onload=()=>{    
         filterProduct("all");
-    // hideSidebar()
     };
