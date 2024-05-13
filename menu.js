@@ -1,12 +1,12 @@
 
-// function showSidebar(){
-//     const sidebar=document.querySelector(".sidebar");
-//     sidebar.style.display="flex";
-// }
-// function hideSidebar(){
-//     const sidebar=document.querySelector(".sidebar");
-//     sidebar.style.display="none";
-// }
+function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
+}
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}
 
 let products ={
     data: [
@@ -243,4 +243,5 @@ let products ={
     //Initially display All Products
     window.onload=()=>{    
         filterProduct("all");
+        showSidebar();
     };
