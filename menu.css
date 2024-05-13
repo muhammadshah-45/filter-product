@@ -253,6 +253,7 @@ img:hover{
   margin: 0;
   padding: 0;
   background:none;
+
 }
 .container h5 {
   font-weight: 500;
@@ -361,6 +362,69 @@ ul {
 
   /* =======&&&&******* MEDIA QUERIES *******&&&&&&=========   */
 /* For Desktop View */
+@media screen and(max-width:1310px){
+  nav {
+    background-color: #ffffff3b;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(204, 204, 204, 0.4);
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: #fff;
+    /* border: 4px solid green; */
+  }
+  nav ul {
+    /* border: 3px solid blue; */
+    max-width: 100%;
+    margin-left: 12em;
+    
+    align-items: flex-end;
+  }
+  ul li {
+  
+    list-style: none;
+  
+  }
+  li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Farro";
+    margin-inline: 1.5rem;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+  }
+  li a:hover {
+    color: orange;
+    text-decoration: overline;
+  }
+  .logo {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0px;
+    left: -.4em;
+  }
+  .logo i {
+    color: orange;
+  }
+  .menu-button {
+    position:relative;
+    top: 6px;
+    right: -2.3em;
+    }
+  #bar {
+    display: none;
+  }
+  .hide-bar{
+    display: none;
+  }
+
+}
 @media screen and (max-width: 1298px) {
   .container {
     background-color:goldenrod;
@@ -368,7 +432,9 @@ ul {
   .hideOnMobile {
     display: none;
   }
-
+  .hide-bar{
+    display: initial;
+  }
 .main {
 flex: 1;
 margin-top: 60px;
@@ -953,6 +1019,11 @@ right: -11.3em;
       /* font-weight: 500; */
       letter-spacing: 0.1em;
      }
+    .container{
+      margin: 0;
+      padding: 0;
+      background:none;
+    }
 }
 
 
@@ -1141,6 +1212,13 @@ div#buttons{
 .container1 h5{
   letter-spacing: 0;
 }
+ 
+
+.container{
+  margin: 0;
+  padding: 0;
+  background:none;
+}
 }
 
 /* For Mobile Portrait View */
@@ -1152,20 +1230,29 @@ div#buttons{
       }
      
       nav {
+  
         box-shadow:inset 0 0 10px rgb(204, 204, 204);
-      }
-      .logo{
-
-        font-size: 15px;
-        position: relative;
-        top: 0px;
-        left: -1em;
-        /* border: 3px solid blue; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:center;
         
       }
-      
-      .navbar{
+      .logo {
+        font-size: 1em;
+        top: 0px;
+        left: 30px;
+        width: 70%;
+    
       }
+      .logo i {
+        color: orange;
+      }
+      .hide-bar{
+         position: relative;
+         top: -1.6em;
+         left:12rem;
+      }
+     
       .menu-button {
         color: #fff;
         position:relative;
@@ -1322,6 +1409,16 @@ div#buttons{
 #search-container input{
   text-align: center;
 }
+ /* Product */
+ .container1 h5{
+  /* font-weight: 500; */
+  letter-spacing: 0.1em;
+ }
+.container{
+  margin: 0;
+  padding: 0;
+  background:none;
+}
 /* footer  */
 .footer {
   width: 100%;
@@ -1330,6 +1427,7 @@ div#buttons{
   backdrop-filter: blur(20px);
   box-shadow: inset -1px 0px 20px rgba(238, 238, 245, 0.822);
   display: inline;
+
 }
 .footer-header h1 {
   text-align: center;
@@ -1403,24 +1501,27 @@ ul {
   }
 
   nav {
+  
     box-shadow:inset 0 0 10px rgb(204, 204, 204);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    
   }
   .logo {
-    font-size: 9.5px;
+    font-size: 0.7em;
     top: 0px;
-    left: 2px;
+    left: 30px;
+    width: 70%;
+
   }
   .logo i {
     color: orange;
   }
-  
-  .navbar{
-  }
-  .menu-button {
-    color: #fff;
-    position:relative;
-    top: 6px;
-    right: -7px;
+  .hide-bar{
+     position: relative;
+     top: -1.6em;
+     left: 30px;
   }
  
 /* start */
@@ -1537,6 +1638,13 @@ ul {
         border-radius: 7px;
         /* float: right; */
       }
+       /* Product */
+     
+    .container{
+      margin: 0;
+      padding: 0;
+      background:none;
+    }
      
 
 #search-container input{
