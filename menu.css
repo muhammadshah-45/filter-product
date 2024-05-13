@@ -7,8 +7,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
-body {
-}
+
 .container {
   background: linear-gradient(to bottom, purple, orange);
   width: 100%;
@@ -80,117 +79,9 @@ li a:hover {
 
 /* Default values of Sidebar start */
 /* Sidebar Section */
-.sidebar {
-  position: fixed;
-  top: 200px;
-  /* border: 5px solid blue; */
-  padding-top: 30px;
-  right: 0;
-  height: 100vh;
-  width: 550px;
-  z-index: 999;
-  background: linear-gradient(to top, orange, purple);
-  backdrop-filter: blur(20px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-
-.sidebar li a{
-  /* border-radius:30px ; */
-  
-}
-.close {
-  position: fixed;
-  top: 0px;
-  right: 12px;
-  max-width: 33px;
-  border: none;
-  outline:none ;
-  /* border: 5px solid slateblue; */
-  z-index: -2;
- 
-  border-radius: 7px;
-  /* float: right; */
-}
-.sideb {
-  margin-top: 20px;
-  /* border: 2px solid green; */
-}
-#side{
-  position: absolute;
-  border: 2px solid red;
-  top: 0px;
-  left: 27.5em;
-}
-/* won */
-/* Sidebar Section from Media Queries */
-/* Sidebar scetion */
-.sidebar {
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 1170px;
-  z-index: 999;
-  background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
-  /* backdrop-filter: blur(20px); */
-  box-shadow:inset 10px 10px 10px rgba(220, 200, 200, 0.692);
-  display: none;
-  border-radius: 10px;
-  border-left:1px solid rgb(204, 204, 204) ;
-  border-right: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar #menus {
-  border-bottom: 3px solid rgba(204, 204, 204, 0.4);
-  padding-bottom: 10px;
-  width: 100%;
-}
-.sidebar #hotel {
-  color: orange;
-  margin-left: 50px;
-  margin-top: 30px;
-}
-.sidebar h1 {
- position: relative;
- top: 3px;
- left: -1em;
-  font-size: 27px;
-}
-.sidebar li a{
-  font-size: 16px;
-  /* border: 2px solid rgb(79, 8, 54); */
-  border-bottom-left-radius:30px ;
-  position: relative;
-  /* top: 1em; */
-  /* left: 2em; */
-}
-.close {
- position: relative;
- top: 10px;
- margin-right: 23em;
- z-index: -1;
- background-color: red;
-}
-#side{
-  background-color: aqua;
-  border: none;
-  z-index: 333;
-}
-.sideb {
-  margin-top: 20px;
-  /* border: 2px solid rgb(22, 82, 22); */
-  
-}
 /*my sidebar  */
-    /* Sidebar Section */
-    .sidebar {
+      /* Sidebar Section */
+      .sidebar {
         position: fixed;
         top: 0;
         right: 0;
@@ -227,20 +118,17 @@ li a:hover {
         /* margin-left: 2px; */
       }
       
-      .close {
+      #close {
         position: absolute;
-        top: 30px;
-        left: 12em;
+        top: 20px;
+        left: 27em;
         /* border: 3px solid red; */
         /* color: red; */
         background-color: rgb(226, 151, 12);
         border-radius: 7px;
         /* float: right; */
       }
-      .sideb {
-        margin-top: 20px;
-        border: 2px solid green;
-      }
+     
 
 /* wrapper style */
 .wrapper {
@@ -564,7 +452,9 @@ right: -12em;
 }
 /*my sidebar  */
     /* Sidebar Section */
-    .sidebar {
+    
+      /* sidebar brother ,before I am setting */
+      .sidebar {
         position: fixed;
         top: 0;
         right: 0;
@@ -601,20 +491,17 @@ right: -12em;
         /* margin-left: 2px; */
       }
       
-      .close {
+      #close {
         position: absolute;
-        top: 39px;
-        left: 12em;
+        top: 20px;
+        left: 27em;
         /* border: 3px solid red; */
         /* color: red; */
         background-color: rgb(226, 151, 12);
         border-radius: 7px;
         /* float: right; */
       }
-      .sideb {
-        margin-top: 20px;
-        border: 2px solid green;
-      }
+     
 }
 
 /* ff */
@@ -703,6 +590,55 @@ right: -11.3em;
         margin-top: 20px;
         border: 2px solid green;
       }
+            /* sidebar brother ,before I am setting */
+            .sidebar {
+              position: fixed;
+              top: 0;
+              right: 0;
+              /* padding-right: 1em; */
+              /* padding-left:120px; */
+              margin: 0;
+              /* text-align: left; */
+              height: 100vh;
+              width: 710px;
+              z-index: 999;
+              background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+              backdrop-filter: blur(20px);
+              box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+            
+            .sidebar #hotel {
+              color: orange;
+              margin-left: 34px;
+              /* margin-top: 2px; */
+            }
+            .sidebar #menus {
+              border-bottom: 3px solid rgba(204, 204, 204, 0.4);
+              padding-bottom: 20px;
+              width: 100%;
+            }
+            
+            
+            .sidebar h1 {
+              font-size: 1.8em;
+              /* margin-left: 2px; */
+            }
+            
+            #close {
+              position: absolute;
+              top: 20px;
+              left: 27em;
+              /* border: 3px solid red; */
+              /* color: red; */
+              background-color: rgb(226, 151, 12);
+              border-radius: 7px;
+              /* float: right; */
+            }
+           
 }
 /* ff */
 @media screen and (max-width: 992px) {
@@ -790,6 +726,55 @@ right: -11.3em;
         margin-top: 20px;
         border: 2px solid green;
       }
+            /* sidebar brother ,before I am setting */
+            .sidebar {
+              position: fixed;
+              top: 0;
+              right: 0;
+              /* padding-right: 1em; */
+              /* padding-left:120px; */
+              margin: 0;
+              /* text-align: left; */
+              height: 100vh;
+              width: 410px;
+              z-index: 999;
+              background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+              backdrop-filter: blur(20px);
+              box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+            
+            .sidebar #hotel {
+              color: orange;
+              margin-left: 34px;
+              /* margin-top: 2px; */
+            }
+            .sidebar #menus {
+              border-bottom: 3px solid rgba(204, 204, 204, 0.4);
+              padding-bottom: 20px;
+              width: 100%;
+            }
+            
+            
+            .sidebar h1 {
+              font-size: 1.8em;
+              /* margin-left: 2px; */
+            }
+            
+            #close {
+              position: absolute;
+              top: 20px;
+              left: 27em;
+              /* border: 3px solid red; */
+              /* color: red; */
+              background-color: rgb(226, 151, 12);
+              border-radius: 7px;
+              /* float: right; */
+            }
+           
 }
 
 /* For Tablet View */
@@ -875,6 +860,55 @@ right: -11.3em;
         background-color: rgb(226, 151, 12);
         border-radius: 7px;
       }
+      /* sidebar 12 May 2024 at 3 22pm before brother I am setting*/
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* padding-right: 1em; */
+        /* padding-left:120px; */
+        margin: 0;
+        /* text-align: left; */
+        height: 100vh;
+        width: 710px;
+        z-index: 999;
+        background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+        backdrop-filter: blur(20px);
+        box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .sidebar #hotel {
+        color: orange;
+        margin-left: 34px;
+        /* margin-top: 2px; */
+      }
+      .sidebar #menus {
+        border-bottom: 3px solid rgba(204, 204, 204, 0.4);
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      
+      
+      .sidebar h1 {
+        font-size: 1.8em;
+        /* margin-left: 2px; */
+      }
+      
+      #close {
+        position: absolute;
+        top: 20px;
+        left: 27em;
+        /* border: 3px solid red; */
+        /* color: red; */
+        background-color: rgb(226, 151, 12);
+        border-radius: 7px;
+        /* float: right; */
+      }
+     
      /* Product */
      .container1 h5{
       /* font-weight: 500; */
@@ -968,6 +1002,55 @@ right: -11.3em;
           margin-top: 20px;
           border: 2px solid green;
         }
+              /* sidebar brother ,before I am setting */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* padding-right: 1em; */
+        /* padding-left:120px; */
+        margin: 0;
+        /* text-align: left; */
+        height: 100vh;
+        width: 410px;
+        z-index: 999;
+        background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+        backdrop-filter: blur(20px);
+        box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .sidebar #hotel {
+        color: orange;
+        margin-left: 34px;
+        /* margin-top: 2px; */
+      }
+      .sidebar #menus {
+        border-bottom: 3px solid rgba(204, 204, 204, 0.4);
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      
+      
+      .sidebar h1 {
+        font-size: 1.8em;
+        /* margin-left: 2px; */
+      }
+      
+      #close {
+        position: absolute;
+        top: 20px;
+        left: 27em;
+        /* border: 3px solid red; */
+        /* color: red; */
+        background-color: rgb(226, 151, 12);
+        border-radius: 7px;
+        /* float: right; */
+      }
+     
 /* search Section */
 #search-container{
   display: flex;
@@ -1101,6 +1184,57 @@ div#buttons{
   margin-top: 20px;
   border: 2px solid green;
 }
+      /* sidebar brother ,before I am setting */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        height: 100vh;
+        width: 310px;
+        z-index: 999;
+        background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+        backdrop-filter: blur(20px);
+        box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .sidebar #hotel {
+        color: orange;
+        /* margin-left: 34px; */
+      }
+      .logo-bar{
+        position: relative;
+        top: 10px;
+        left: -1em;
+        /* border: 6px solid wheat; */
+      }
+      .sidebar #menus {
+        border-bottom: 3px solid rgba(204, 204, 204, 0.4);
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      
+      
+      .sidebar h1 {
+        font-size: 1.8em;
+        /* margin-left: 2px; */
+      }
+      
+      #close {
+        position: absolute;
+        top: 20px;
+        left: 27em;
+        /* border: 3px solid red; */
+        /* color: red; */
+        background-color: rgb(226, 151, 12);
+        border-radius: 7px;
+        /* float: right; */
+      }
+     
 /* search Section */
 #search-container{
   display: flex;
@@ -1301,6 +1435,70 @@ ul {
         border: 2px solid green;
       }
 /* end */
+      /* sidebar brother ,before I am setting */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* padding-right: 1em; */
+        /* padding-left:120px; */
+        margin: 0;
+        /* text-align: left; */
+        height: 100vh;
+        width: 300px;
+        z-index: 999;
+        background: linear-gradient(to top, orange, rgba(150, 13, 150, 0.883));
+        backdrop-filter: blur(20px);
+        box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .sidebar #hotel {
+        color: orange;
+        /* margin-top: 2px; */
+      }
+      .logo-bar{
+        position: relative;
+        top: 10px;
+        left: 2px;
+        /* border: 6px solid wheat; */
+      }
+      .sidebar #menus {
+        /* border-bottom: 3px solid rgba(204, 204, 204, 0.4); */
+        padding-bottom: 20px;
+        width: 70%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      }
+      .sidebar #menus a{
+        /* border: 3px solid black; */
+        position: relative;
+        left: 50px;
+      
+      }
+      
+      
+      .sidebar h1 {
+        font-size: 1.2em;
+        /* margin-left: 2px; */
+      }
+      
+      #close {
+        position: absolute;
+        top: 20px;
+        left: 27em;
+        /* border: 3px solid red; */
+        /* color: red; */
+        background-color: rgb(226, 151, 12);
+        border-radius: 7px;
+        /* float: right; */
+      }
+     
 
 #search-container input{
   text-align: center;
