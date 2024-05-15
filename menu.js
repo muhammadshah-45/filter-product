@@ -17,6 +17,7 @@ let products ={
             price:"40",
             cart:"Add to Cart",
             image:"./images/food1.webp",
+            cartBtn:"Add to Cart",
         },
         {
             productName:"Broccoli Salad",
@@ -24,7 +25,8 @@ let products ={
             price:"50",
             cart:"Add to Cart",
             
-            image:"./images/food4.webp",   
+            image:"./images/food4.webp",  
+            cartBtn:"Add to Cart", 
         }
         ,{
             productName:"Jasmine Rice",
@@ -33,6 +35,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg6.webp",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Rubby Chicken ",
@@ -41,6 +44,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/food6.webp",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Tandoori Chicken",
@@ -49,6 +53,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/food2.webp",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Hummus",
@@ -57,6 +62,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg4.jpg",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Hongshao ",
@@ -65,6 +71,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/food3.webp",
+            cartBtn:"Add to Cart",
         },
         {
             productName:"Caesor Salad ",
@@ -73,6 +80,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/food5.webp",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Japanese Vegetable ",
@@ -81,6 +89,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg5.webp",
+            cartBtn:"Add to Cart",
         },
         {
             productName:"Chilli Noodles ",
@@ -89,6 +98,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg3.webp",
+            cartBtn:"Add to Cart",
         },
         {
             productName:"Air Fryer Beacon ",
@@ -97,6 +107,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg1.webp",
+            cartBtn:"Add to Cart",
         }
         ,{
             productName:"Beef Steak",
@@ -105,6 +116,7 @@ let products ={
             cart:"Add to Cart",
             
             image:"./images/blg2.webp",
+            cartBtn:"Add to Cart",
         },
     ],
     };
@@ -138,6 +150,12 @@ let products ={
     // price.style.color="#efefef"
     container.appendChild(price);
     card.appendChild(container);
+
+    let cartBtns=document.createElement("button");
+    cartBtns.innerText= i.cartBtn;
+    cartBtns.classList.add("cart-buttons")
+    container.appendChild(cartBtns);
+    
     // My previous code that issued
     // ============finish this block ====== //
     // ========(SATRT) I did my work given below ======//
